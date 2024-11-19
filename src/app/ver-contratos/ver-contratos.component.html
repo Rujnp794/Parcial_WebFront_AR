@@ -1,0 +1,25 @@
+<!-- src/app/components/ver-contratos/ver-contratos.component.html -->
+<div class="container">
+    <h2>Contratos Existentes</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Identificador</th>
+          <th>Valor</th>
+          <th>Nombre Contratante</th>
+          <th>Fecha Inicial</th>
+          <th>Fecha Final</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let contrato of contratos">
+          <td>{{ contrato.identificador }}</td>
+          <td>{{ contrato.valor }}</td>
+          <td>{{ contrato.nombreContratante }}</td>
+          <td>{{ contrato.fechaInicial }}</td>
+          <td>{{ contrato.fechaFinal }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+ 
